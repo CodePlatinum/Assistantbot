@@ -1,7 +1,7 @@
 services:
-  - type: worker
+  - type: web
     name: assistantbot
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
+    startCommand: "python server.py"
     plan: free
